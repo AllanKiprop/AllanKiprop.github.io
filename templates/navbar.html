@@ -1,0 +1,48 @@
+ <!-- Navbar*-compulsory -->
+    <!-- 7section (Creativity)-10mks each(including the footer section)-->
+    <!-- navbar starts here -->
+    <div class="contaner-fluid">
+        <section >
+          <div class="col-12">
+            <!-- we place our navigation bar(nav) -->
+            <nav class="navbar navbar-expand-md navbar-dark p-4" style="background-color: black;"
+        >
+              <!-- brand (a) -->
+              <a href="" class="navbar-brand text-warning" style="font-size: xx-large; font-weight: 500;"><img src="static/images/misojilogocropped.jpg"  width="100%" height="50" alt="" class="d-inline-block align-middle mr-2" alt="Misoji"></a>
+  
+              <!-- button -->
+              <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#idname"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- links -->
+              <div class="collapse navbar-collapse" id="idname">
+                <div class="navbar-nav">
+                  <a href="/" class="nav-item nav-link active">Home</a>
+                  <a href="/aboutus" class="nav-item nav-link">About Us</a>
+                  <a href="/product" class="nav-item nav-link">Products</a>
+                  
+                  
+                  <input type="search" name="searchtf" id="searchtf" placeholder="Search Misoji" style="border-radius: 50px;" width="530000">
+                </div>
+  
+                <!-- items to the right -->
+                <div class="navbar-nav ms-auto">
+                  {%if session['key']%}
+                  
+                  <a href="/logout" class="nav-item nav-link">Logout </a>
+                  {%else%}
+                  <a href="/login" class="nav-item nav-link">Login </a>
+                  <a href="/register" class="nav-item nav-link">Sign up</a>
+                  {%endif%}
+                </div>
+              </div>
+            </nav>
+          </div>
+        </section>
+      </div>
+      <!-- navbar ends here -->
